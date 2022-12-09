@@ -1,0 +1,1396 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link rel="pingback" href="https://demo.cocobasic.com/blanka-wp/xmlrpc.php" />
+    <title>Blanka &#8211; One Page WordPress Theme</title>
+    <style type="text/css">
+      .single .site-wrapper h1.entry-title,
+      .site-wrapper ul.comment-author-date-replay-holder li.comment-author {
+        color: #221c5a;
+      }
+
+      .site-wrapper .header-holder,
+      .site-wrapper .sm-clean ul,
+      .site-wrapper .footer,
+      .site-wrapper .menu-holder {
+        background-color: #221c5a;
+      }
+
+      body .site-wrapper,
+      .single .site-wrapper .nav-links a,
+      .site-wrapper .comment-form-holder a,
+      .single .site-wrapper .entry-info a,
+      .single .site-wrapper .nav-links a {
+        color: #7762a1;
+      }
+
+      body .site-wrapper a,
+      body .site-wrapper a:hover,
+      .site-wrapper .sm-clean a:hover,
+      .site-wrapper .main-menu.sm-clean .sub-menu li a:hover,
+      .site-wrapper .sm-clean li.active a,
+      .site-wrapper .sm-clean li.current-page-ancestor>a,
+      .site-wrapper .sm-clean li.current_page_ancestor>a,
+      .site-wrapper .sm-clean li.current_page_item>a,
+      .site-wrapper .blog-item-holder:hover h4 a,
+      .site-wrapper .blog-item-holder .big-circle,
+      .navigation.pagination a:hover,
+      .single .site-wrapper .entry-info a:hover,
+      .single .site-wrapper .wp-link-pages,
+      .single .site-wrapper .nav-links a:hover,
+      .site-wrapper .comment-form-holder a:hover,
+      .site-wrapper .replay-at-author,
+      .site-wrapper .text-slider-header-quotes:before,
+      .site-wrapper .pricing-table-price {
+        color: #e625a4;
+      }
+
+      .site-wrapper .tags-holder a,
+      .site-wrapper blockquote:not(.cocobasic-block-pullquote) {
+        border-color: #e625a4;
+      }
+
+      .site-wrapper .blog-item-holder h4 a span:after,
+      .site-wrapper .blog-item-holder .big-circle:before,
+      .blog .site-wrapper .more-posts,
+      .blog .site-wrapper .no-more-posts,
+      .blog .site-wrapper .more-posts-loading,
+      .site-wrapper .navigation.pagination .current,
+      .site-wrapper .tags-holder a,
+      .site-wrapper .form-submit input[type=submit],
+      .site-wrapper .wpcf7 input[type=submit],
+      .site-wrapper a.service-link,
+      .site-wrapper .slick-dots li.slick-active button:before,
+      .site-wrapper a.button,
+      .site-wrapper .social-holder .social,
+      .site-wrapper .v-skill-fill,
+      .site-wrapper .category-filter-list .button:hover,
+      .site-wrapper .category-filter-list .button.is-checked,
+      .site-wrapper .portfolio-arrow {
+        background-color: #e625a4;
+      }
+
+      .site-wrapper .blog-item-holder h4 a span:after,
+      .site-wrapper .form-submit input[type=submit],
+      .site-wrapper .wpcf7 input[type=submit],
+      .site-wrapper a.service-link,
+      .site-wrapper a.button,
+      .site-wrapper .category-filter-list .button:hover,
+      .site-wrapper .category-filter-list .button.is-checked {
+        box-shadow: 0px 0px 50px 0px rgba(230, 37, 164, 0.65);
+      }
+
+      body .site-wrapper ::selection {
+        background-color: #e625a4;
+      }
+
+      body .site-wrapper ::-moz-selection {
+        background-color: #e625a4;
+      }
+
+      .site-wrapper .section h2.entry-title,
+      .page-template-default.page .site-wrapper .section h1.entry-title,
+      .blog .site-wrapper h1.entry-title,
+      .search .site-wrapper h1.entry-title,
+      .archive .site-wrapper h1.entry-title {
+        color: #7b06b0;
+      }
+
+      .site-wrapper .section h2.entry-title,
+      .page-template-default.page .site-wrapper .section h1.entry-title,
+      .blog .site-wrapper h1.entry-title,
+      .search .site-wrapper h1.entry-title,
+      .archive .site-wrapper h1.entry-title {
+        background-color: #efe2ff;
+      }
+
+      .site-wrapper .blog-item-holder h4 a,
+      .site-wrapper .section .page-description,
+      .site-wrapper .blog .page-description,
+      .site-wrapper #commentform #email,
+      .site-wrapper #commentform #author,
+      .site-wrapper #commentform #comment,
+      .site-wrapper .wpcf7-form,
+      .site-wrapper .wpcf7 input[type=text],
+      .site-wrapper .wpcf7 input[type=email],
+      .site-wrapper .wpcf7 textarea,
+      .site-wrapper h5.service-title,
+      .site-wrapper .big-text,
+      .site-wrapper .big-number {
+        color: #62408c;
+      }
+
+      .site-wrapper #commentform input[type=text]::-webkit-input-placeholder,
+      .site-wrapper #commentform input[type=email]::-webkit-input-placeholder,
+      .site-wrapper #commentform textarea::-webkit-input-placeholder,
+      .site-wrapper .wpcf7 input[type=text]::-webkit-input-placeholder,
+      .site-wrapper .wpcf7 input[type=email]::-webkit-input-placeholder,
+      .site-wrapper .wpcf7 textarea::-webkit-input-placeholder {
+        color: #62408c;
+      }
+
+      .site-wrapper #commentform input[type=text]::-moz-placeholder,
+      .site-wrapper #commentform input[type=email]::-moz-placeholder,
+      .site-wrapper #commentform textarea::-moz-placeholder,
+      .site-wrapper .wpcf7 input[type=text]::-moz-placeholder,
+      .site-wrapper .wpcf7 input[type=email]::-moz-placeholder,
+      .site-wrapper .wpcf7 textarea::-moz-placeholder {
+        color: #62408c;
+      }
+
+      .site-wrapper #commentform input[type=text]:-ms-input-placeholder,
+      .site-wrapper #commentform input[type=email]:-ms-input-placeholder,
+      .site-wrapper #commentform textarea:-ms-input-placeholder,
+      .site-wrapper .wpcf7 input[type=text]:-ms-input-placeholder,
+      .site-wrapper .wpcf7 input[type=email]:-ms-input-placeholder,
+      .site-wrapper .wpcf7 textarea:-ms-input-placeholder {
+        color: #62408c;
+      }
+
+      .site-wrapper #commentform input[type=text]:-moz-placeholder,
+      .site-wrapper #commentform input[type=email]:-moz-placeholder,
+      .site-wrapper #commentform textarea:-moz-placeholder,
+      .site-wrapper .wpcf7 input[type=text]:-moz-placeholder,
+      .site-wrapper .wpcf7 input[type=email]:-moz-placeholder,
+      .site-wrapper .wpcf7 textarea:-moz-placeholder {
+        color: #62408c;
+      }
+
+      .single.single-portfolio .site-wrapper ol.comments-list-holder {
+        border-color: #62408c;
+      }
+
+      .site-wrapper .pricing-table-title {
+        background-color: #62408c;
+      }
+    </style>
+    <meta name='robots' content='max-image-preview:large' />
+    <link rel='dns-prefetch' href='//fonts.googleapis.com' />
+    <link rel='stylesheet' id='wp-block-library-css' href='https://demo.cocobasic.com/blanka-wp/wp-includes/css/dist/block-library/style.min.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='classic-theme-styles-css' href='https://demo.cocobasic.com/blanka-wp/wp-includes/css/classic-themes.min.css' type='text/css' media='all' />
+    <style id='global-styles-inline-css' type='text/css'>
+      body {
+        --wp--preset--color--black: #000000;
+        --wp--preset--color--cyan-bluish-gray: #abb8c3;
+        --wp--preset--color--white: #ffffff;
+        --wp--preset--color--pale-pink: #f78da7;
+        --wp--preset--color--vivid-red: #cf2e2e;
+        --wp--preset--color--luminous-vivid-orange: #ff6900;
+        --wp--preset--color--luminous-vivid-amber: #fcb900;
+        --wp--preset--color--light-green-cyan: #7bdcb5;
+        --wp--preset--color--vivid-green-cyan: #00d084;
+        --wp--preset--color--pale-cyan-blue: #8ed1fc;
+        --wp--preset--color--vivid-cyan-blue: #0693e3;
+        --wp--preset--color--vivid-purple: #9b51e0;
+        --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%);
+        --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
+        --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg, rgba(252, 185, 0, 1) 0%, rgba(255, 105, 0, 1) 100%);
+        --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg, rgba(255, 105, 0, 1) 0%, rgb(207, 46, 46) 100%);
+        --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg, rgb(238, 238, 238) 0%, rgb(169, 184, 195) 100%);
+        --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 20%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
+        --wp--preset--gradient--blush-light-purple: linear-gradient(135deg, rgb(255, 206, 236) 0%, rgb(152, 150, 240) 100%);
+        --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg, rgb(254, 205, 165) 0%, rgb(254, 45, 45) 50%, rgb(107, 0, 62) 100%);
+        --wp--preset--gradient--luminous-dusk: linear-gradient(135deg, rgb(255, 203, 112) 0%, rgb(199, 81, 192) 50%, rgb(65, 88, 208) 100%);
+        --wp--preset--gradient--pale-ocean: linear-gradient(135deg, rgb(255, 245, 203) 0%, rgb(182, 227, 212) 50%, rgb(51, 167, 181) 100%);
+        --wp--preset--gradient--electric-grass: linear-gradient(135deg, rgb(202, 248, 128) 0%, rgb(113, 206, 126) 100%);
+        --wp--preset--gradient--midnight: linear-gradient(135deg, rgb(2, 3, 129) 0%, rgb(40, 116, 252) 100%);
+        --wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');
+        --wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');
+        --wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');
+        --wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');
+        --wp--preset--duotone--midnight: url('#wp-duotone-midnight');
+        --wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');
+        --wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');
+        --wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');
+        --wp--preset--font-size--small: 13px;
+        --wp--preset--font-size--medium: 20px;
+        --wp--preset--font-size--large: 36px;
+        --wp--preset--font-size--x-large: 42px;
+        --wp--preset--spacing--20: 0.44rem;
+        --wp--preset--spacing--30: 0.67rem;
+        --wp--preset--spacing--40: 1rem;
+        --wp--preset--spacing--50: 1.5rem;
+        --wp--preset--spacing--60: 2.25rem;
+        --wp--preset--spacing--70: 3.38rem;
+        --wp--preset--spacing--80: 5.06rem;
+      }
+
+      :where(.is-layout-flex) {
+        gap: 0.5em;
+      }
+
+      body .is-layout-flow>.alignleft {
+        float: left;
+        margin-inline-start: 0;
+        margin-inline-end: 2em;
+      }
+
+      body .is-layout-flow>.alignright {
+        float: right;
+        margin-inline-start: 2em;
+        margin-inline-end: 0;
+      }
+
+      body .is-layout-flow>.aligncenter {
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+
+      body .is-layout-constrained>.alignleft {
+        float: left;
+        margin-inline-start: 0;
+        margin-inline-end: 2em;
+      }
+
+      body .is-layout-constrained>.alignright {
+        float: right;
+        margin-inline-start: 2em;
+        margin-inline-end: 0;
+      }
+
+      body .is-layout-constrained>.aligncenter {
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+
+      body .is-layout-constrained> :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+        max-width: var(--wp--style--global--content-size);
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+
+      body .is-layout-constrained>.alignwide {
+        max-width: var(--wp--style--global--wide-size);
+      }
+
+      body .is-layout-flex {
+        display: flex;
+      }
+
+      body .is-layout-flex {
+        flex-wrap: wrap;
+        align-items: center;
+      }
+
+      body .is-layout-flex>* {
+        margin: 0;
+      }
+
+      :where(.wp-block-columns.is-layout-flex) {
+        gap: 2em;
+      }
+
+      .has-black-color {
+        color: var(--wp--preset--color--black) !important;
+      }
+
+      .has-cyan-bluish-gray-color {
+        color: var(--wp--preset--color--cyan-bluish-gray) !important;
+      }
+
+      .has-white-color {
+        color: var(--wp--preset--color--white) !important;
+      }
+
+      .has-pale-pink-color {
+        color: var(--wp--preset--color--pale-pink) !important;
+      }
+
+      .has-vivid-red-color {
+        color: var(--wp--preset--color--vivid-red) !important;
+      }
+
+      .has-luminous-vivid-orange-color {
+        color: var(--wp--preset--color--luminous-vivid-orange) !important;
+      }
+
+      .has-luminous-vivid-amber-color {
+        color: var(--wp--preset--color--luminous-vivid-amber) !important;
+      }
+
+      .has-light-green-cyan-color {
+        color: var(--wp--preset--color--light-green-cyan) !important;
+      }
+
+      .has-vivid-green-cyan-color {
+        color: var(--wp--preset--color--vivid-green-cyan) !important;
+      }
+
+      .has-pale-cyan-blue-color {
+        color: var(--wp--preset--color--pale-cyan-blue) !important;
+      }
+
+      .has-vivid-cyan-blue-color {
+        color: var(--wp--preset--color--vivid-cyan-blue) !important;
+      }
+
+      .has-vivid-purple-color {
+        color: var(--wp--preset--color--vivid-purple) !important;
+      }
+
+      .has-black-background-color {
+        background-color: var(--wp--preset--color--black) !important;
+      }
+
+      .has-cyan-bluish-gray-background-color {
+        background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+      }
+
+      .has-white-background-color {
+        background-color: var(--wp--preset--color--white) !important;
+      }
+
+      .has-pale-pink-background-color {
+        background-color: var(--wp--preset--color--pale-pink) !important;
+      }
+
+      .has-vivid-red-background-color {
+        background-color: var(--wp--preset--color--vivid-red) !important;
+      }
+
+      .has-luminous-vivid-orange-background-color {
+        background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+      }
+
+      .has-luminous-vivid-amber-background-color {
+        background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+      }
+
+      .has-light-green-cyan-background-color {
+        background-color: var(--wp--preset--color--light-green-cyan) !important;
+      }
+
+      .has-vivid-green-cyan-background-color {
+        background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+      }
+
+      .has-pale-cyan-blue-background-color {
+        background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+      }
+
+      .has-vivid-cyan-blue-background-color {
+        background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+      }
+
+      .has-vivid-purple-background-color {
+        background-color: var(--wp--preset--color--vivid-purple) !important;
+      }
+
+      .has-black-border-color {
+        border-color: var(--wp--preset--color--black) !important;
+      }
+
+      .has-cyan-bluish-gray-border-color {
+        border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+      }
+
+      .has-white-border-color {
+        border-color: var(--wp--preset--color--white) !important;
+      }
+
+      .has-pale-pink-border-color {
+        border-color: var(--wp--preset--color--pale-pink) !important;
+      }
+
+      .has-vivid-red-border-color {
+        border-color: var(--wp--preset--color--vivid-red) !important;
+      }
+
+      .has-luminous-vivid-orange-border-color {
+        border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+      }
+
+      .has-luminous-vivid-amber-border-color {
+        border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+      }
+
+      .has-light-green-cyan-border-color {
+        border-color: var(--wp--preset--color--light-green-cyan) !important;
+      }
+
+      .has-vivid-green-cyan-border-color {
+        border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+      }
+
+      .has-pale-cyan-blue-border-color {
+        border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+      }
+
+      .has-vivid-cyan-blue-border-color {
+        border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+      }
+
+      .has-vivid-purple-border-color {
+        border-color: var(--wp--preset--color--vivid-purple) !important;
+      }
+
+      .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+        background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
+      }
+
+      .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+        background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
+      }
+
+      .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+        background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
+      }
+
+      .has-luminous-vivid-orange-to-vivid-red-gradient-background {
+        background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
+      }
+
+      .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+        background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
+      }
+
+      .has-cool-to-warm-spectrum-gradient-background {
+        background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
+      }
+
+      .has-blush-light-purple-gradient-background {
+        background: var(--wp--preset--gradient--blush-light-purple) !important;
+      }
+
+      .has-blush-bordeaux-gradient-background {
+        background: var(--wp--preset--gradient--blush-bordeaux) !important;
+      }
+
+      .has-luminous-dusk-gradient-background {
+        background: var(--wp--preset--gradient--luminous-dusk) !important;
+      }
+
+      .has-pale-ocean-gradient-background {
+        background: var(--wp--preset--gradient--pale-ocean) !important;
+      }
+
+      .has-electric-grass-gradient-background {
+        background: var(--wp--preset--gradient--electric-grass) !important;
+      }
+
+      .has-midnight-gradient-background {
+        background: var(--wp--preset--gradient--midnight) !important;
+      }
+
+      .has-small-font-size {
+        font-size: var(--wp--preset--font-size--small) !important;
+      }
+
+      .has-medium-font-size {
+        font-size: var(--wp--preset--font-size--medium) !important;
+      }
+
+      .has-large-font-size {
+        font-size: var(--wp--preset--font-size--large) !important;
+      }
+
+      .has-x-large-font-size {
+        font-size: var(--wp--preset--font-size--x-large) !important;
+      }
+
+      .wp-block-navigation a:where(:not(.wp-element-button)) {
+        color: inherit;
+      }
+
+      :where(.wp-block-columns.is-layout-flex) {
+        gap: 2em;
+      }
+
+      .wp-block-pullquote {
+        font-size: 1.5em;
+        line-height: 1.6;
+      }
+    </style>
+    <link rel='stylesheet' id='prettyPhoto-css' href='https://demo.cocobasic.com/blanka-wp/wp-content/cache/autoptimize/css/autoptimize_single_18e76c583933ae8050d8ccd8e37a7c44.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='slick-css' href='https://demo.cocobasic.com/blanka-wp/wp-content/cache/autoptimize/css/autoptimize_single_9e8afe354f59d91ff52840421df67d48.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='cocobasic-main-plugin-style-css' href='https://demo.cocobasic.com/blanka-wp/wp-content/cache/autoptimize/css/autoptimize_single_28e7d026cfc6bdef129e697facf859d4.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='contact-form-7-css' href='https://demo.cocobasic.com/blanka-wp/wp-content/cache/autoptimize/css/autoptimize_single_e6fae855021a88a0067fcc58121c594f.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='blanka-google-fonts-css' href='//fonts.googleapis.com/css?family=League+Script%7CPoppins%3A300%2C400%2C500%2C600%2C700%7CMontserrat%3A700&#038;ver=1.0.0' type='text/css' media='all' />
+    <link rel='stylesheet' id='blanka-clear-style-css' href='https://demo.cocobasic.com/blanka-wp/wp-content/cache/autoptimize/css/autoptimize_single_9c517a2fdeaea29fcffda0c5cb2782a2.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='blanka-common-style-css' href='https://demo.cocobasic.com/blanka-wp/wp-content/cache/autoptimize/css/autoptimize_single_58b02e9453fa51c9460c93c1576b5386.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='font-awesome-css' href='https://demo.cocobasic.com/blanka-wp/wp-content/themes/blanka-wp/css/font-awesome.min.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='sm-cleen-css' href='https://demo.cocobasic.com/blanka-wp/wp-content/cache/autoptimize/css/autoptimize_single_25843399d2362fa21a84d7670d6c8681.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='blanka-main-theme-style-css' href='https://demo.cocobasic.com/blanka-wp/wp-content/cache/autoptimize/css/autoptimize_single_7623912bf790eb443297b02ac67c48d8.css' type='text/css' media='all' />
+    <style id='blanka-main-theme-style-inline-css' type='text/css'>
+      .section.post-37 {
+        background-image: url("https://demo.cocobasic.com/blanka-wp/wp-content/uploads/2017/09/hero_img2.jpg");
+        background-color: #eb09eb;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        min-height: calc(100vh - 220px);
+      }
+
+      .section.post-41 {
+        background-image: url("https://demo.cocobasic.com/blanka-wp/wp-content/uploads/2017/09/wave_01.png");
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-attachment: scroll;
+        padding-bottom: 150px;
+      }
+
+      .section.post-49 {
+        background-position: left top;
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-attachment: scroll;
+      }
+
+      .section.post-60 {
+        background-position: left top;
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-attachment: scroll;
+      }
+
+      .section.post-62 {
+        background-color: #f3f1f6;
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-attachment: scroll;
+        padding-bottom: 0;
+      }
+
+      .section.post-85 {
+        background-image: url("https://demo.cocobasic.com/blanka-wp/wp-content/uploads/2017/09/team_bg.jpg");
+        background-color: #efefef;
+        background-position: left top;
+        background-repeat: repeat;
+        background-size: auto;
+        background-attachment: fixed;
+      }
+
+      .section.post-193 {
+        background-color: #f3f1f6;
+        background-position: left top;
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-attachment: scroll;
+      }
+
+      .section.post-64 {
+        background-position: left top;
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-attachment: scroll;
+      }
+
+      .section.post-98 {
+        background-image: url("https://demo.cocobasic.com/blanka-wp/wp-content/uploads/2017/09/map_img.jpg");
+        background-color: #f3f1f6;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-attachment: scroll;
+      }
+
+      .section.post-232 {
+        background-position: left top;
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-attachment: scroll;
+      }
+
+      .section.post-126 {
+        background-position: left top;
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-attachment: scroll;
+      }
+    </style>
+    <script type='text/javascript' src='https://demo.cocobasic.com/blanka-wp/wp-includes/js/jquery/jquery.min.js' id='jquery-core-js'></script>
+    <!--[if lt IE 9]>
+		<script type='text/javascript' src='https://demo.cocobasic.com/blanka-wp/wp-content/themes/blanka-wp/js/html5shiv.js' id='html5shiv-js'></script>
+		<![endif]-->
+    <!--[if lt IE 9]>
+		<script type='text/javascript' src='https://demo.cocobasic.com/blanka-wp/wp-content/themes/blanka-wp/js/respond.min.js' id='respond-js'></script>
+		<![endif]-->
+    <link rel="https://api.w.org/" href="https://demo.cocobasic.com/blanka-wp/wp-json/" />
+    <link rel="alternate" type="application/json" href="https://demo.cocobasic.com/blanka-wp/wp-json/wp/v2/pages/28" />
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://demo.cocobasic.com/blanka-wp/xmlrpc.php?rsd" />
+    <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://demo.cocobasic.com/blanka-wp/wp-includes/wlwmanifest.xml" />
+    <meta name="generator" content="WordPress 6.1.1" />
+    <link rel="canonical" href="https://demo.cocobasic.com/blanka-wp/" />
+    <link rel='shortlink' href='https://demo.cocobasic.com/blanka-wp/' />
+    <link rel="alternate" type="application/json+oembed" href="https://demo.cocobasic.com/blanka-wp/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdemo.cocobasic.com%2Fblanka-wp%2F" />
+    <link rel="alternate" type="text/xml+oembed" href="https://demo.cocobasic.com/blanka-wp/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdemo.cocobasic.com%2Fblanka-wp%2F&#038;format=xml" />
+    <link rel="icon" href="https://demo.cocobasic.com/blanka-wp/wp-content/uploads/2017/09/cropped-favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://demo.cocobasic.com/blanka-wp/wp-content/uploads/2017/09/cropped-favicon-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://demo.cocobasic.com/blanka-wp/wp-content/uploads/2017/09/cropped-favicon-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://demo.cocobasic.com/blanka-wp/wp-content/uploads/2017/09/cropped-favicon-270x270.png" />
+    <style type="text/css" id="wp-custom-css">
+      /*
+You can add your own CSS here.
+
+Click the help icon above to learn more.
+*/
+      .header-logo img {
+        width: 140px;
+        height: 20px;
+      }
+    </style>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-90924782-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'UA-90924782-1', {
+        'anonymize_ip': true
+      });
+    </script>
+  </head>
+  <body class="home page-template page-template-onepage page-template-onepage-php page page-id-28 gecko linux">
+    <div class="site-wrapper">
+      <div class="doc-loader">
+        <img src="https://demo.cocobasic.com/blanka-wp/wp-content/themes/blanka-wp/images/preloader.gif" alt="Blanka" />
+      </div>
+      <header class="header-holder">
+        <div class="menu-wrapper center-relative relative">
+          <div class="header-logo">
+            <a href="https://demo.cocobasic.com/blanka-wp/">
+              <img src="https://demo.cocobasic.com/blanka-wp/wp-content/uploads/2017/09/logo_2x.png" alt="Blanka" />
+            </a>
+          </div>
+          <div class="toggle-holder">
+            <div id="toggle" class="">
+              <div class="first-menu-line"></div>
+              <div class="second-menu-line"></div>
+              <div class="third-menu-line"></div>
+            </div>
+          </div>
+          <div class="menu-holder">
+            <nav id="header-main-menu" class="menu-menu-1-container">
+              <ul id="menu-menu-1" class="main-menu sm sm-clean">
+                <li id="menu-item-47" class=" menu-item menu-item-type-post_type menu-item-object-page">
+                  <a href="#home">Home</a>
+                </li>
+                <li id="menu-item-48" class=" menu-item menu-item-type-post_type menu-item-object-page">
+                  <a href="#services">Services</a>
+                </li>
+                <li id="menu-item-69" class=" menu-item menu-item-type-post_type menu-item-object-page">
+                  <a href="#portfolio">Portfolio</a>
+                </li>
+                <li id="menu-item-68" class=" menu-item menu-item-type-post_type menu-item-object-page">
+                  <a href="#about">About</a>
+                </li>
+                <li id="menu-item-67" class=" menu-item menu-item-type-post_type menu-item-object-page">
+                  <a href="#clients">Clients</a>
+                </li>
+                <li id="menu-item-88" class=" menu-item menu-item-type-post_type menu-item-object-page">
+                  <a href="#team">Team</a>
+                </li>
+                <li id="menu-item-220" class=" menu-item menu-item-type-post_type menu-item-object-page">
+                  <a href="#pricing">Pricing</a>
+                </li>
+                <li id="menu-item-66" class=" menu-item menu-item-type-post_type menu-item-object-page">
+                  <a href="#news">News</a>
+                </li>
+                <li id="menu-item-102" class=" menu-item menu-item-type-post_type menu-item-object-page">
+                  <a href="#contact">Contact</a>
+                </li>
+                <li id="menu-item-228" class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">
+                  <a href="#" class="custom-link">More</a>
+                  <ul class="sub-menu">
+                    <li id="menu-item-248" class=" menu-item menu-item-type-post_type menu-item-object-page">
+                      <a href="https://demo.cocobasic.com/blanka-wp/features/" class="no-scroll">features</a>
+                    </li>
+                    <li id="menu-item-258" class=" menu-item menu-item-type-post_type menu-item-object-portfolio">
+                      <a href="https://demo.cocobasic.com/blanka-wp/portfolio/item-1/" class="custom-link">portfolio item I</a>
+                    </li>
+                    <li id="menu-item-259" class=" menu-item menu-item-type-post_type menu-item-object-portfolio">
+                      <a href="https://demo.cocobasic.com/blanka-wp/portfolio/item-5/" class="custom-link">portfolio item II</a>
+                    </li>
+                    <li id="menu-item-260" class=" menu-item menu-item-type-post_type menu-item-object-portfolio">
+                      <a href="https://demo.cocobasic.com/blanka-wp/portfolio/item-6/" class="custom-link">portfolio item III</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="clear"></div>
+        </div>
+      </header>
+      <div id="content" class="site-content center-relative">
+        <div id="home" class="section post-37 page type-page status-publish hentry">
+          <div class="block content-1070 center-relative section-content">
+            <h1 class="curve-text center">Hello</h1>
+            <p class="intro-description center"> We are old school Web Designers <br /> &amp; Developers from New York </p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <div class="center-text">
+              <a href="#contact" target="_self" class="button ">Hire Us Now</a>
+            </div>
+            <div class="icon-scroll"></div>
+          </div>
+        </div>
+        <div id="services" class="section post-41 page type-page status-publish hentry">
+          <div class="block content-1070 center-relative section-content">
+            <h2 class="entry-title">Services</h2>
+            <p class="page-description">Our passion for design goes beyond beautiful imagery <br />We believe good design should solve problems </p>
+            <div class="one_third animate">
+              <div class="service-item relative ">
+                <img class="service-icon" src="https://demo.cocobasic.com/blanka-wp/wp-content/uploads/2017/09/icon_01.png" alt="" />
+                <h5 class="service-title">Pixel Preciese</h5>
+                <div class="service-content"> Cosmic ocean another world the only home we&#8217;ve ever known <br />
+                </div>
+                <a class="service-link scroll" href="#clients" target="_self"></a>
+              </div>
+            </div>
+            <div class="one_third animate wait-03s">
+              <div class="service-item relative ">
+                <img class="service-icon" src="https://demo.cocobasic.com/blanka-wp/wp-content/uploads/2017/09/icon_02.png" alt="" />
+                <h5 class="service-title">Top Notch Support</h5>
+                <div class="service-content"> The sky calls to us rig veda gathered by sun carbon in our apple <br />
+                </div>
+                <a class="service-link scroll" href="#team" target="_self"></a>
+              </div>
+            </div>
+            <div class="one_third last animate wait-06s">
+              <div class="service-item relative ">
+                <img class="service-icon" src="https://demo.cocobasic.com/blanka-wp/wp-content/uploads/2017/09/icon_03.png" alt="" />
+                <h5 class="service-title">Web Scalable</h5>
+                <div class="service-content"> Fugue how far away preserve and cherish that pale blue dot <br />
+                </div>
+                <a class="service-link scroll" href="#contact" target="_self"></a>
+              </div>
+            </div>
+            <div class="clear"></div>
+          </div>
+        </div>
+        <div id="portfolio" class="section post-49 page type-page status-publish hentry">
+          <div class="block content-1070 center-relative section-content">
+            <h2 class="entry-title">Portfolio</h2>
+          </div>
+          <div class="full-page-width center-relative">
+            <div class="portfolio-wrapper">
+              <div class="category-filter-list button-group filters-button-group">
+                <div class="button is-checked" data-filter="*">All</div>
+                <div class="button" data-filter=".1image">Image</div>
+                <div class="button" data-filter=".2video">Video</div>
+                <div class="button" data-filter=".3post">Post</div>
+                <div class="button" data-filter=".4external">External</div>
+              </div>
+              <div class="grid" id="portfolio-grid">
+                <div class="grid-sizer"></div>
+                <div class="grid-item element-item p_one_third 3post">
+                  <a class="item-link" href="https://demo.cocobasic.com/blanka-wp/portfolio/item-1/">
+                    <img width="640" height="430" src="https://demo.cocobasic.com/blanka-wp/wp-content/uploads/2017/09/thumb_porfolio_img_01.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://demo.cocobasic.com/blanka-wp/wp-content/uploads/2017/09/thumb_porfolio_img_01.jpg 640w, https://demo.cocobasic.com/blanka-wp/wp-content/uploads/2017/09/thumb_porfolio_img_01-300x202.jpg 300w" sizes="(max-width: 640px) 100vw, 640px" />
+                    <div class="portfolio-text-holder">
+                      <p class="portfolio-arrow"></p>
+                      <p class="portfolio-title">Platter Mockup</p>
+                      <p class="portfolio-desc">Photoshop Premade</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="grid-item element-item p_one_third 2video">
+                  <a class="item-link" href="https://vimeo.com/166419987" data-rel="prettyPhoto[gallery1]">
+                    <img width="640" height="430" src="https://demo.cocobasic.com/blanka-wp/wp-content/uploads/2017/09/thumb_porfolio_img_02.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://demo.cocobasic.com/blanka-wp/wp-content/uploads/2017/09/thumb_porfolio_img_02.jpg 640w, https://demo.cocobasic.com/blanka-wp/wp-content/uploads/2017/09/thumb_porfolio_img_02-300x202.jpg 300w" sizes="(max-width: 640px) 100vw, 640px" />
+                    <div class="portfolio-text-holder">
+                      <p class="portfolio-arrow"></p>
+                      <p class="portfolio-title">Skyscrapper</p>
+                      <p class="portfolio-desc">Photography</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="grid-item element-item p_one_third 1image">
+                  <a class="item-link" href="https://demo.cocobasic.com/blanka-wp/wp-content/uploads/2017/09/large_porfolio_img_03.jpg" data-rel="prettyPhoto[gallery1]">
+                    <img width="640" height="430" src="https://demo.cocobasic.com/blanka-wp/wp-content/uploads/2017/09/thumb_porfolio_img_03.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://demo.cocobasic.com/blanka-wp/wp-content/uploads/2017/09/thumb_porfolio_img_03.jpg 640w, https://demo.cocobasic.com/blanka-wp/wp-content/uploads/2017/09/thumb_porfolio_img_03-300x202.jpg 300w" sizes="(max-width: 640px) 100vw, 640px" />
+                    <div class="portfolio-text-holder">
+                      <p class="portfolio-arrow"></p>
+                      <p class="portfolio-title">At Work</p>
+                      <p class="portfolio-desc">Preserve and cherish</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="grid-item element-item p_one_third 1image">
+                  <a class="item-link" href="https://demo.cocobasic.com/blanka-wp/wp-content/uploads/2017/09/large_porfolio_img_04.jpg" data-rel="prettyPhoto[gallery1]">
+                    <img width="640" height="430" src="https://demo.cocobasic.com/blanka-wp/wp-content/uploads/2017/09/thumb_porfolio_img_04.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://demo.cocobasic.com/blanka-wp/wp-content/uploads/2017/09/thumb_porfolio_img_04.jpg 640w, https://demo.cocobasic.com/blanka-wp/wp-content/uploads/2017/09/thumb_porfolio_img_04-300x202.jpg 300w" sizes="(max-width: 640px) 100vw, 640px" />
+                    <div class="portfolio-text-holder">
+                      <p class="portfolio-arrow"></p>
+                      <p class="portfolio-title">Coffe Cup</p>
+                      <p class="portfolio-desc">Photoshop Mockup</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="grid-item element-item p_one_third 3post">
+                  <a class="item-link" href="https://demo.cocobasic.com/blanka-wp/portfolio/item-5/">
+                    <img width="640" height="430" src="https://demo.cocobasic.com/blanka-wp/wp-content/uploads/2017/09/thumb_porfolio_img_05.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://demo.cocobasic.com/blanka-wp/wp-content/uploads/2017/09/thumb_porfolio_img_05.jpg 640w, https://demo.cocobasic.com/blanka-wp/wp-content/uploads/2017/09/thumb_porfolio_img_05-300x202.jpg 300w" sizes="(max-width: 640px) 100vw, 640px" />
+                    <div class="portfolio-text-holder">
+                      <p class="portfolio-arrow"></p>
+                      <p class="portfolio-title">Corporate Mockup</p>
+                      <p class="portfolio-desc">Corporate Identity</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="grid-item element-item p_one_third 3post">
+                  <a class="item-link" href="https://demo.cocobasic.com/blanka-wp/portfolio/item-6/">
+                    <img width="640" height="430" src="https://demo.cocobasic.com/blanka-wp/wp-content/uploads/2017/09/thumb_porfolio_img_06.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://demo.cocobasic.com/blanka-wp/wp-content/uploads/2017/09/thumb_porfolio_img_06.jpg 640w, https://demo.cocobasic.com/blanka-wp/wp-content/uploads/2017/09/thumb_porfolio_img_06-300x202.jpg 300w" sizes="(max-width: 640px) 100vw, 640px" />
+                    <div class="portfolio-text-holder">
+                      <p class="portfolio-arrow"></p>
+                      <p class="portfolio-title">Stamp</p>
+                      <p class="portfolio-desc">Photoshop Mockup</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="grid-item element-item p_one_third 4external">
+                  <a class="item-link" href="https://themeforest.net/item/opta-minimal-portfolio-and-photography-wordpress-theme/19536077?ref=CocoBasic" target="_blank">
+                    <img width="640" height="430" src="https://demo.cocobasic.com/blanka-wp/wp-content/uploads/2017/09/thumb_porfolio_img_07.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://demo.cocobasic.com/blanka-wp/wp-content/uploads/2017/09/thumb_porfolio_img_07.jpg 640w, https://demo.cocobasic.com/blanka-wp/wp-content/uploads/2017/09/thumb_porfolio_img_07-300x202.jpg 300w" sizes="(max-width: 640px) 100vw, 640px" />
+                    <div class="portfolio-text-holder">
+                      <p class="portfolio-arrow"></p>
+                      <p class="portfolio-title">Web Design</p>
+                      <p class="portfolio-desc">Wordpress</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="grid-item element-item p_one_third 1image">
+                  <a class="item-link" href="https://demo.cocobasic.com/blanka-wp/wp-content/uploads/2017/09/large_porfolio_img_08.png" data-rel="prettyPhoto[gallery1]">
+                    <img width="640" height="430" src="https://demo.cocobasic.com/blanka-wp/wp-content/uploads/2017/09/thumb_porfolio_img_08.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://demo.cocobasic.com/blanka-wp/wp-content/uploads/2017/09/thumb_porfolio_img_08.jpg 640w, https://demo.cocobasic.com/blanka-wp/wp-content/uploads/2017/09/thumb_porfolio_img_08-300x202.jpg 300w" sizes="(max-width: 640px) 100vw, 640px" />
+                    <div class="portfolio-text-holder">
+                      <p class="portfolio-arrow"></p>
+                      <p class="portfolio-title">Smart Watch</p>
+                      <p class="portfolio-desc">Photoshop Mockup</p>
+                    </div>
+                  </a>
+                </div>
+                <div class="grid-item element-item p_one_third 2video">
+                  <a class="item-link" href="https://vimeo.com/157276599" data-rel="prettyPhoto[gallery1]">
+                    <img width="640" height="430" src="https://demo.cocobasic.com/blanka-wp/wp-content/uploads/2017/09/thumb_porfolio_img_09.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://demo.cocobasic.com/blanka-wp/wp-content/uploads/2017/09/thumb_porfolio_img_09.jpg 640w, https://demo.cocobasic.com/blanka-wp/wp-content/uploads/2017/09/thumb_porfolio_img_09-300x202.jpg 300w" sizes="(max-width: 640px) 100vw, 640px" />
+                    <div class="portfolio-text-holder">
+                      <p class="portfolio-arrow"></p>
+                      <p class="portfolio-title">Mobile App</p>
+                      <p class="portfolio-desc">User Interface</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="clear"></div>
+            </div>
+          </div>
+          <div class="block content-1070 center-relative section-content resume"></div>
+        </div>
+        <div id="about" class="section post-60 page type-page status-publish hentry">
+          <div class="block content-1070 center-relative section-content">
+            <h2 class="entry-title">About</h2>
+            <p class="page-description">We love to design and build websites, <br /> applications, mobile solutions and other awesome digital media. </p>
+            <div class="one_half ">
+              <p class="big-text ">A mote of dust suspended in a sunbeam network</p>
+              <p>&nbsp;</p>
+              <p>Tunguska event quasar decipherment, are creatures of the cosmos, rich in heavy atoms Vangelis vanquish the impo sible hydrogen atoms paroxysm of global death</p>
+              <p>Ship of the imagination dispassionate extraterrestrial observer cosmic ocean preserve and cherish that blue other world gathered by gravity, light years</p>
+              <p>&nbsp;</p>
+              <p>
+              <div class="text-left">
+                <a href="#contact" target="_self" class="button ">Hire Us Now</a>
+              </div>
+              <br />
+            </div>
+            <div class="one_half last animate">
+              <a class="video-popup-holder " href="https://vimeo.com/157276599" data-rel="prettyPhoto[gallery-video1]">
+                <img class="thumb" src=https://demo.cocobasic.com/blanka-wp/wp-content/uploads/2017/09/about_img2.jpg alt="" />
+                <p class="popup-play"></p>
+              </a>
+              <br />
+            </div>
+            <div class="clear"></div>
+            <div class="v-skills-holder ">
+              <span class="v-skills-level"></span>
+              <span class="v-skills-level-2"></span>
+              <div class="v-skill ">
+                <div class="v-skill-fill" style="width: 90%; height:90%;"></div>
+                <span class="v-skill-text">WP</span>
+              </div>
+              <div class="v-skill ">
+                <div class="v-skill-fill" style="width: 75%; height:75%;"></div>
+                <span class="v-skill-text">PhP</span>
+              </div>
+              <div class="v-skill ">
+                <div class="v-skill-fill" style="width: 70%; height:70%;"></div>
+                <span class="v-skill-text">JS</span>
+              </div>
+              <div class="v-skill ">
+                <div class="v-skill-fill" style="width: 85%; height:85%;"></div>
+                <span class="v-skill-text">PSD</span>
+              </div>
+              <div class="v-skill ">
+                <div class="v-skill-fill" style="width: 90%; height:90%;"></div>
+                <span class="v-skill-text">HTML</span>
+              </div>
+              <div class="v-skill ">
+                <div class="v-skill-fill" style="width: 55%; height:55%;"></div>
+                <span class="v-skill-text">Al</span>
+              </div>
+              <div class="v-skill ">
+                <div class="v-skill-fill" style="width: 35%; height:35%;"></div>
+                <span class="v-skill-text">C#</span>
+              </div>
+              <div class="v-skill ">
+                <div class="v-skill-fill" style="width: 66%; height:66%;"></div>
+                <span class="v-skill-text">DB</span>
+              </div>
+              <div class="v-skill ">
+                <div class="v-skill-fill" style="width: 78%; height:78%;"></div>
+                <span class="v-skill-text">C++</span>
+              </div>
+              <div class="v-skill ">
+                <div class="v-skill-fill" style="width: 50%; height:50%;"></div>
+                <span class="v-skill-text">.NET</span>
+              </div>
+              <div class="v-skill ">
+                <div class="v-skill-fill" style="width: 62%; height:62%;"></div>
+                <span class="v-skill-text">PERL</span>
+              </div>
+              <div class="v-skill ">
+                <div class="v-skill-fill" style="width: 88%; height:88%;"></div>
+                <span class="v-skill-text">SVG</span>
+              </div>
+              <div class="v-skill ">
+                <div class="v-skill-fill" style="width: 75%; height:75%;"></div>
+                <span class="v-skill-text">EPS</span>
+              </div>
+              <div class="v-skill ">
+                <div class="v-skill-fill" style="width: 70%; height:70%;"></div>
+                <span class="v-skill-text">CSS3</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="clients" class="section post-62 page type-page status-publish hentry">
+          <div class="block content-1070 center-relative section-content">
+            <h2 class="entry-title">Clients</h2>
+          </div>
+          <div class="full-page-width center-relative" style="background-image:url(https://demo.cocobasic.com/blanka-wp/wp-content/uploads/2017/09/stats_bg.png)">
+            <div class="big-number ">
+              <img src="https://demo.cocobasic.com/blanka-wp/wp-content/uploads/2017/09/info_icon.png" alt="" />
+              <p class="big-number-content">
+                <span class="big-number-start">746 312 665</span>
+                <span class="up-text">px</span>
+                <span class="big-number-stop hidden">746 312 685</span>
+                <span class="big-number-duration hidden">5</span>
+              </p>
+              <p class="big-down-text">pixels created</p>
+            </div>
+          </div>
+          <div class="block content-1070 center-relative section-content resume">
+            <div class="one_fourth ">
+              <img decoding="async" loading="lazy" class="alignnone size-full wp-image-83" src="https://demo.cocobasic.com/blanka-wp/wp-content/uploads/2017/09/client_logo_01.png" alt="" width="250" height="85" />
+              <br />
+              <img decoding="async" loading="lazy" class="alignnone size-full wp-image-87" src="https://demo.cocobasic.com/blanka-wp/wp-content/uploads/2017/09/client_logo_05.png" alt="" width="250" height="85" />
+              <br />
+            </div>
+            <div class="one_fourth ">
+              <img decoding="async" loading="lazy" class="alignnone size-full wp-image-84" src="https://demo.cocobasic.com/blanka-wp/wp-content/uploads/2017/09/client_logo_02.png" alt="" width="250" height="85" />
+              <br />
+              <img decoding="async" loading="lazy" class="alignnone size-full wp-image-88" src="https://demo.cocobasic.com/blanka-wp/wp-content/uploads/2017/09/client_logo_06.png" alt="" width="250" height="85" />
+              <br />
+            </div>
+            <div class="one_fourth ">
+              <img decoding="async" loading="lazy" class="alignnone size-full wp-image-85" src="https://demo.cocobasic.com/blanka-wp/wp-content/uploads/2017/09/client_logo_03.png" alt="" width="250" height="85" />
+              <br />
+              <img decoding="async" loading="lazy" class="alignnone size-full wp-image-89" src="https://demo.cocobasic.com/blanka-wp/wp-content/uploads/2017/09/client_logo_07.png" alt="" width="250" height="85" />
+              <br />
+            </div>
+            <div class="one_fourth last ">
+              <img decoding="async" loading="lazy" class="alignnone size-full wp-image-86" src="https://demo.cocobasic.com/blanka-wp/wp-content/uploads/2017/09/client_logo_04.png" alt="" width="250" height="85" />
+              <br />
+              <img decoding="async" loading="lazy" class="alignnone size-full wp-image-90" src="https://demo.cocobasic.com/blanka-wp/wp-content/uploads/2017/09/client_logo_08.png" alt="" width="250" height="85" />
+              <br />
+            </div>
+            <div class="clear"></div>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+          </div>
+          <div class="full-page-width center-relative" style="background-image:url(https://demo.cocobasic.com/blanka-wp/wp-content/uploads/2017/09/testimonial_bg.jpg)">
+            <script>
+              var textSlider_speed = "2000";
+              var textSlider_auto = "true";
+              var textSlider_hover = "true";
+            </script>
+            <div class="text-slider-wrapper relative">
+              <div class="text-slider-header-quotes center"></div>
+              <div id=textSlider class="text-slider slider">
+                <div class="text-slide">
+                  <p class="text-slide-content"> Emerged into consciousness decipherment Drake Equation explorations how far away. Trillion Drake Equation descended from astronomers light years <br />
+                  </p>
+                  <img class="text-slide-img" src="https://demo.cocobasic.com/blanka-wp/wp-content/uploads/2017/09/testiomonial_img_01.jpg" alt="" />
+                  <p class="text-slide-name">PETER HALL</p>
+                  <p class="text-slide-position">CEO</p>
+                </div>
+                <div class="text-slide">
+                  <p class="text-slide-content"> Globular star cluster, another world brain is the seed of intelligence a billion trillion bits of moving fluff hearts of the stars. Hypatia preserve and cherish that pale blue dot. <br />
+                  </p>
+                  <img class="text-slide-img" src="https://demo.cocobasic.com/blanka-wp/wp-content/uploads/2017/09/testiomonial_img_02.jpg" alt="" />
+                  <p class="text-slide-name">JANE WILLIAMS</p>
+                  <p class="text-slide-position">DESIGNER</p>
+                </div>
+                <div class="text-slide">
+                  <p class="text-slide-content"> Hypatia preserve and cherish that pale blue dot. Hundreds of thousands! Inconspicuous motes of rock and gas the carbon in our apple pies. <br />
+                  </p>
+                  <img class="text-slide-img" src="https://demo.cocobasic.com/blanka-wp/wp-content/uploads/2017/09/testiomonial_img_03.jpg" alt="" />
+                  <p class="text-slide-name">JOHN SMITH</p>
+                  <p class="text-slide-position">GURU</p>
+                </div>
+              </div>
+              <div class="clear"></div>
+            </div>
+          </div>
+          <div class="block content-1070 center-relative section-content resume"></div>
+        </div>
+        <div id="team" class="section post-85 page type-page status-publish hentry">
+          <div class="block content-1070 center-relative section-content">
+            <h2 class="entry-title">Team</h2>
+            <p class="page-description">Our passion for design goes beyond beautiful imagery <br /> We believe good design should solve problems </p>
+            <div class="two_third ">
+              <p class="big-text ">Per se neque porro quisquam est set, seper neque ipsum quister set dolorem per sei donec&#8230;</p>
+            </div>
+            <div class="one_third last "> Ship of the imagination dispassionate extraterrestrial observer cosmic ocean preserve and cherish that blue other world gathered by gravity, light years <br />
+            </div>
+            <div class="clear"></div>
+            <p>&nbsp;</p>
+            <div class="one_third ">
+              <div class="member ">
+                <img class="member-img" src="https://demo.cocobasic.com/blanka-wp/wp-content/uploads/2017/09/team_img_01.jpg" alt="" />
+                <div class="member-info">
+                  <p class="member-name">MARK STONE</p>
+                  <p class="member-position">DEVELOPER</p>
+                  <div class="member-content">
+                    <div class="social-holder ">
+                      <div class="social ">
+                        <a href="#" target="_self">
+                          <span class="fa fa-twitter"></span>
+                        </a>
+                      </div>
+                      <div class="social ">
+                        <a href="#" target="_self">
+                          <span class="fa fa-dribbble"></span>
+                        </a>
+                      </div>
+                      <div class="social ">
+                        <a href="#" target="_self">
+                          <span class="fa fa-reddit-alien"></span>
+                        </a>
+                      </div>
+                      <div class="social ">
+                        <a href="#" target="_self">
+                          <span class="fa fa-dropbox"></span>
+                        </a>
+                      </div>
+                    </div> Terre estere doloremique sei laudantium, totames remeseo aperiam, eaque ipsa quae ab illo inventore veritatis rete et quasi architecto beataes vitae. <br />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="one_third ">
+              <div class="member ">
+                <img class="member-img" src="https://demo.cocobasic.com/blanka-wp/wp-content/uploads/2017/09/team_img_02.jpg" alt="" />
+                <div class="member-info">
+                  <p class="member-name">JOHN DOE</p>
+                  <p class="member-position">DESIGNER</p>
+                  <div class="member-content">
+                    <div class="social-holder ">
+                      <div class="social ">
+                        <a href="#" target="_self">
+                          <span class="fa fa-facebook"></span>
+                        </a>
+                      </div>
+                      <div class="social ">
+                        <a href="#" target="_self">
+                          <span class="fa fa-vine"></span>
+                        </a>
+                      </div>
+                      <div class="social ">
+                        <a href="#" target="_self">
+                          <span class="fa fa-youtube-play"></span>
+                        </a>
+                      </div>
+                      <div class="social ">
+                        <a href="#" target="_self">
+                          <span class="fa fa-instagram"></span>
+                        </a>
+                      </div>
+                    </div> Terre estere doloremique sei laudantium, totames remeseo aperiam, eaque ipsa quae ab illo inventore veritatis rete et quasi architecto beataes vitae. <br />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="one_third last ">
+              <div class="member ">
+                <img class="member-img" src="https://demo.cocobasic.com/blanka-wp/wp-content/uploads/2017/09/team_img_03.jpg" alt="" />
+                <div class="member-info">
+                  <p class="member-name">ANNA DOE</p>
+                  <p class="member-position">MARKETING</p>
+                  <div class="member-content">
+                    <div class="social-holder ">
+                      <div class="social ">
+                        <a href="#" target="_self">
+                          <span class="fa fa-behance"></span>
+                        </a>
+                      </div>
+                      <div class="social ">
+                        <a href="#" target="_self">
+                          <span class="fa fa-dribbble"></span>
+                        </a>
+                      </div>
+                      <div class="social ">
+                        <a href="#" target="_self">
+                          <span class="fa fa-facebook"></span>
+                        </a>
+                      </div>
+                      <div class="social ">
+                        <a href="#" target="_self">
+                          <span class="fa fa-codepen"></span>
+                        </a>
+                      </div>
+                    </div> Terre estere doloremique sei laudantium, totames remeseo aperiam, eaque ipsa quae ab illo inventore veritatis rete et quasi architecto beataes vitae. <br />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="clear"></div>
+          </div>
+        </div>
+        <div id="pricing" class="section post-193 page type-page status-publish hentry">
+          <div class="block content-1070 center-relative section-content">
+            <h2 class="entry-title">Pricing</h2>
+            <p class="page-description">Tellus donec dolor nunc tincidunt ac scelerisque ac varius <br /> tempus diam vivamus lacinia gravida enim </p>
+            <div class="one_third no-margin">
+              <div class="pricing-table top-50">
+                <div class="pricing-table-header">
+                  <div class="pricing-table-title">BASIC</div>
+                </div>
+                <div class="pricing-table-price">$29.99</div>
+                <div class="pricing-table-desc">per month</div>
+                <div class="pricing-table-content-holder">
+                  <ul>
+                    <li>25 GB Storage</li>
+                    <li>24/7 Support</li>
+                    <li>Up to 50 Users</li>
+                    <li>Donec Estu</li>
+                    <li>Lorem Ipsum</li>
+                  </ul>
+                </div>
+                <a href="#" class="button" target="_self"> Purchase </a>
+              </div>
+            </div>
+            <div class="one_third no-margin">
+              <div class="pricing-table ">
+                <div class="pricing-table-header">
+                  <div class="pricing-table-title">STANDARD</div>
+                </div>
+                <div class="pricing-table-price">$39.99</div>
+                <div class="pricing-table-desc">per month</div>
+                <div class="pricing-table-content-holder">
+                  <ul>
+                    <li>50 GB Storage</li>
+                    <li>24/7 Support</li>
+                    <li>Up to 1000 Users</li>
+                    <li>Donec Estu</li>
+                    <li>Lorem Ipsum</li>
+                    <li>Sit Ametus</li>
+                    <li>Vivamus Lacin</li>
+                    <li>Scelerisa Esta</li>
+                  </ul>
+                </div>
+                <a href="#" class="button" target="_self"> Purchase </a>
+              </div>
+            </div>
+            <div class="one_third last no-margin">
+              <div class="pricing-table top-50">
+                <div class="pricing-table-header">
+                  <div class="pricing-table-title">ADVANCED</div>
+                </div>
+                <div class="pricing-table-price">$49.99</div>
+                <div class="pricing-table-desc">per month</div>
+                <div class="pricing-table-content-holder">
+                  <ul>
+                    <li>25 GB Storage</li>
+                    <li>24/7 Support</li>
+                    <li>Up to 50 Users</li>
+                    <li>Donec Estu</li>
+                    <li>Lorem Ipsum</li>
+                  </ul>
+                </div>
+                <a href="#" class="button" target="_self"> Purchase </a>
+              </div>
+            </div>
+            <div class="clear"></div>
+          </div>
+        </div>
+        <div id="news" class="section post-64 page type-page status-publish hentry">
+          <div class="block content-1070 center-relative section-content">
+            <h2 class="entry-title">News</h2>
+            <p class="page-description">Latest news and updates</p>
+          </div>
+          <div class="full-page-width center-relative">
+            <div class="blog-holder block center-relative">
+              <article id="post-123" class="relative animate blog-item-holder center-relative latest-posts-scode">
+                <h4 class="entry-title">
+                  <a href="https://demo.cocobasic.com/blanka-wp/a-very-small-stage-in-a-vast-cosmic-arena-rich-in-mystery/">A very small stage in a vast cosmic arena rich in mystery <span class="arrow"></span>
+                  </a>
+                </h4>
+                <div class="entry-date published">September 2017</div>
+                <div class="author vcard ">Mike Stone</div>
+                <div class="clear"></div>
+              </article>
+              <article id="post-121" class="relative animate blog-item-holder center-relative latest-posts-scode">
+                <h4 class="entry-title">
+                  <a href="https://demo.cocobasic.com/blanka-wp/citizens-of-distant-epochs-decipherment-the-carbon-in-our-apple-pies-kindling/">Citizens of distant epochs decipherment the carbon in our apple pies kindling <span class="arrow"></span>
+                  </a>
+                </h4>
+                <div class="entry-date published">September 2017</div>
+                <div class="author vcard ">Mike Stone</div>
+                <div class="clear"></div>
+              </article>
+              <article id="post-119" class="relative animate blog-item-holder center-relative latest-posts-scode">
+                <h4 class="entry-title">
+                  <a href="https://demo.cocobasic.com/blanka-wp/galaxies-citizens-of-distant-epochs-two-ghostly-white-figures/">Galaxies citizens of distant epochs two ghostly white figures <span class="arrow"></span>
+                  </a>
+                </h4>
+                <div class="entry-date published">September 2017</div>
+                <div class="author vcard ">Mike Stone</div>
+                <div class="clear"></div>
+              </article>
+              <article id="post-117" class="relative animate blog-item-holder center-relative latest-posts-scode">
+                <h4 class="entry-title">
+                  <a href="https://demo.cocobasic.com/blanka-wp/from-which-we-spring-with-pretty-stories-for-which-theres-little-good/">From which we spring with pretty stories for which there&#8217;s little good <span class="arrow"></span>
+                  </a>
+                </h4>
+                <div class="entry-date published">September 2017</div>
+                <div class="author vcard ">Mike Stone</div>
+                <div class="clear"></div>
+              </article>
+              <article id="post-1" class="relative animate blog-item-holder center-relative latest-posts-scode">
+                <h4 class="entry-title">
+                  <a href="https://demo.cocobasic.com/blanka-wp/muse-about-culture-brain-is-the-seed-of-intelligence-jean-francois/">Muse about culture brain is the seed of intelligence Jean-Francois <span class="arrow"></span>
+                  </a>
+                </h4>
+                <div class="entry-date published">September 2017</div>
+                <div class="author vcard ">Mike Stone</div>
+                <div class="clear"></div>
+              </article>
+            </div>
+            <br />
+          </div>
+          <div class="block content-1070 center-relative section-content resume">
+            <p>&nbsp;</p>
+            <div class="center-text">
+              <a href="https://demo.cocobasic.com/blanka-wp/blog/" target="_self" class="button ">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div id="contact" class="section post-98 page type-page status-publish hentry">
+          <div class="block content-1070 center-relative section-content">
+            <h2 class="entry-title">Contact</h2>
+            <p class="page-description">Tellus donec dolor nunc tincidunt ac scelerisque ac varius <br /> tempus diam vivamus lacinia gravida enim </p>
+            <div class="contact-page-wrapper">
+              <div class="contact-page-left">
+                <p class="medium-text ">Something incredible is waiting to be known</p>
+                <p>&nbsp;</p>
+                <p>Tunguska event quasar deciphes ment, are creatures of the cosmos, rich in heavy atoms Vangelis vanter quish the impo ship of the moon</p>
+                <p>&nbsp;</p>
+                <div class="contact-info">
+                  <span class="fa fa-map-marker"></span>
+                  <p class="contact-info-content">New York, Some Super Agency, Unamed Street 4B</p>
+                </div>
+                <div class="contact-info">
+                  <span class="fa fa-mobile"></span>
+                  <p class="contact-info-content">+123.456.789</p>
+                </div>
+                <div class="contact-info">
+                  <span class="fa fa-envelope"></span>
+                  <p class="contact-info-content">office@yourwebsite.com</p>
+                </div>
+                <div class="contact-info">
+                  <span class="fa fa-globe"></span>
+                  <p class="contact-info-content">www.yourwebsite.com</p>
+                </div>
+              </div>
+              <div class="contact-page-right">
+                <div role="form" class="wpcf7" id="wpcf7-f100-o1" lang="en-US" dir="ltr">
+                  <div class="screen-reader-response">
+                    <p role="status" aria-live="polite" aria-atomic="true"></p>
+                    <ul></ul>
+                  </div>
+                  <form action="/blanka-wp/#wpcf7-f100-o1" method="post" class="wpcf7-form init demo" novalidate="novalidate" data-status="init">
+                    <div style="display: none;">
+                      <input type="hidden" name="_wpcf7" value="100" />
+                      <input type="hidden" name="_wpcf7_version" value="5.6.4" />
+                      <input type="hidden" name="_wpcf7_locale" value="en_US" />
+                      <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f100-o1" />
+                      <input type="hidden" name="_wpcf7_container_post" value="0" />
+                      <input type="hidden" name="_wpcf7_posted_data_hash" value="" />
+                    </div>
+                    <p>
+                      <span class="wpcf7-form-control-wrap" data-name="your-name">
+                        <input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Your Name" />
+                      </span>
+                    </p>
+                    <p>
+                      <span class="wpcf7-form-control-wrap" data-name="your-email">
+                        <input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Your Email" />
+                      </span>
+                    </p>
+                    <p>
+                      <span class="wpcf7-form-control-wrap" data-name="your-subject">
+                        <input type="text" name="your-subject" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Subject" />
+                      </span>
+                    </p>
+                    <p>
+                      <span class="wpcf7-form-control-wrap" data-name="your-message">
+                        <textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" placeholder="Message"></textarea>
+                      </span>
+                    </p>
+                    <p class="contact-submit-holder">
+                      <input type="submit" value="Send" class="wpcf7-form-control has-spinner wpcf7-submit" />
+                    </p>
+                    <div class="wpcf7-response-output" aria-hidden="true"></div>
+                  </form>
+                </div>
+              </div>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="footer-content content-1070 center-relative">
+          <ul class="copyright-holder">
+            <li class="copyright-footer"> © 2022 Blanka WordPress Theme by <a href="http://cocobasic.com">CocoBasic</a>. </li>
+            <li class="social-footer">
+              <a href="#">Twitter</a>
+              <a href="#">Facebook</a>
+              <a href="#">Instagram</a>
+              <a href="#">Behance</a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+    <script type='text/javascript' id='contact-form-7-js-extra'>
+      var wpcf7 = {
+        "api": {
+          "root": "https:\/\/demo.cocobasic.com\/blanka-wp\/wp-json\/",
+          "namespace": "contact-form-7\/v1"
+        }
+      };
+    </script>
+    <script type='text/javascript' id='blanka-infinite-loading-index-js-extra'>
+      var ajax_var = {
+        "url": "https:\/\/demo.cocobasic.com\/blanka-wp\/wp-admin\/admin-ajax.php",
+        "nonce": "a22be03cf2",
+        "posts_per_page_index": "6",
+        "total_index": "9",
+        "num_pages_index": "2"
+      };
+    </script>
+    <script defer src="https://demo.cocobasic.com/blanka-wp/wp-content/cache/autoptimize/js/autoptimize_76609df6a61c240c586a8f09bdaf4547.js"></script>
+  </body>
+</html>
