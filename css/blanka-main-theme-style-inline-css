@@ -1,0 +1,88 @@
+ .section.post-37 {
+        background-image: url("https://demo.cocobasic.com/blanka-wp/wp-content/uploads/2017/09/hero_img2.jpg");
+        background-color: #eb09eb;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        min-height: calc(100vh - 220px);
+      }
+
+      .section.post-41 {
+        background-image: url("https://demo.cocobasic.com/blanka-wp/wp-content/uploads/2017/09/wave_01.png");
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-attachment: scroll;
+        padding-bottom: 150px;
+      }
+
+      .section.post-49 {
+        background-position: left top;
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-attachment: scroll;
+      }
+
+      .section.post-60 {
+        background-position: left top;
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-attachment: scroll;
+      }
+
+      .section.post-62 {
+        background-color: #f3f1f6;
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-attachment: scroll;
+        padding-bottom: 0;
+      }
+
+      .section.post-85 {
+        background-image: url("https://demo.cocobasic.com/blanka-wp/wp-content/uploads/2017/09/team_bg.jpg");
+        background-color: #efefef;
+        background-position: left top;
+        background-repeat: repeat;
+        background-size: auto;
+        background-attachment: fixed;
+      }
+
+      .section.post-193 {
+        background-color: #f3f1f6;
+        background-position: left top;
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-attachment: scroll;
+      }
+
+      .section.post-64 {
+        background-position: left top;
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-attachment: scroll;
+      }
+
+      .section.post-98 {
+        background-image: url("https://demo.cocobasic.com/blanka-wp/wp-content/uploads/2017/09/map_img.jpg");
+        background-color: #f3f1f6;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-attachment: scroll;
+      }
+
+      .section.post-232 {
+        background-position: left top;
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-attachment: scroll;
+      }
+
+      .section.post-126 {
+        background-position: left top;
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-attachment: scroll;
+      }
